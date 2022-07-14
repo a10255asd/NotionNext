@@ -51,6 +51,13 @@ const BLOG = {
   ...require('./conf/notion.config'), // 读取notion数据库相关的扩展配置，例如自定义表头
   ...require('./conf/dev.config'), // 开发、调试时需要关注的配置
 
+  // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
+  CONTACT_EMAIL: 'a10255aa@gmail.com',
+  CONTACT_WEIBO: '',
+  CONTACT_TWITTER: '',
+  CONTACT_GITHUB: 'https://github.com/a10255asd',
+  CONTACT_TELEGRAM: '',
+
   // 自定义外部脚本，外部样式
   CUSTOM_EXTERNAL_JS: [''], // e.g. ['http://xx.com/script.js','http://xx.com/script.js']
   CUSTOM_EXTERNAL_CSS: [''], // e.g. ['http://xx.com/style.css','http://xx.com/style.css']
