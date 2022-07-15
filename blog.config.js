@@ -10,7 +10,7 @@ const BLOG = {
   SINCE: process.env.NEXT_PUBLIC_SINCE || 2021, // e.g if leave this empty, current year will be used.
 
   AUTHOR: 'LiuJixue', // 作者
-  BIO: '一个普通的干饭人🍚', // 作者简介
+  BIO: '好好生活，努力睡觉 🛌', // 作者简介
   LINK: 'https://liujixue.cn', // 网站地址
 
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
