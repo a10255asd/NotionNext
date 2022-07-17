@@ -3,7 +3,7 @@ const BLOG = {
   AUTHOR: 'LiuJixue', // 作者
   BIO: '好好生活，努力睡觉 🛌', // 作者简介
   LINK: 'https://liujixue.cn', // 网站地址
-  KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
+  KEYWORDS: '刘鸡血, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || '8b7a707f17e34ea29d93a9127f4ab101', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
