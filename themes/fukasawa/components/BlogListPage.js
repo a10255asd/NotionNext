@@ -12,9 +12,9 @@ import PaginationSimple from './PaginationSimple'
  * @returns {JSX.Element}
  * @constructor
  */
-const BlogListPage = ({ page = 1, posts = [], postCount }) => {
+const BlogListPage = ({ page = 1, posts = [], postCount, siteInfo }) => {
   const totalPage = Math.ceil(postCount / BLOG.POSTS_PER_PAGE)
-  const showNext = page < totalPage && posts.length === BLOG.POSTS_PER_PAGE && posts.length < postCount
+  const showNext = page < totalPage
   const [colCount, changeCol] = useState(1)
 
   function updateCol() {
@@ -39,12 +39,12 @@ const BlogListPage = ({ page = 1, posts = [], postCount }) => {
     return <BlogPostListEmpty />
   } else {
     return (
-      <div id="container">
+      <div>
         {/* 文章列表 */}
-        <div style={{ columnCount: colCount }}>
+        <div id="container" style={{ columnCount: colCount }}>
           {posts?.map(post => (
             <div key={post.id} className='justify-center flex' style={{ breakInside: 'avoid' }}>
-              <BlogCard key={post.id} post={post} />
+              <BlogCard key={post.id} post={post} siteInfo={siteInfo} />
             </div>
           ))}
         </div>
