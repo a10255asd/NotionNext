@@ -62,7 +62,7 @@ const BLOG = {
   ...require('./conf/dev.config'), // 开发、调试时需要关注的配置
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'a10255aa@gmail.com',
+  CONTACT_EMAIL: 'YTEwMjU1YWFAZ21haWwuY29t',
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
   CONTACT_GITHUB: 'https://github.com/a10255asd',
