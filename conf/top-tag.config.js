@@ -10,6 +10,5 @@
  * - 其它非置顶文章的相对顺序不变
  */
 module.exports = {
-  TOP_TAG: process.env.NEXT_PUBLIC_TOP_TAG || process.env.TOP_TAG || ''
+  TOP_TAG: process.env.NEXT_PUBLIC_TOP_TAG || process.env.TOP_TAG || '推荐阅读'
 }
-
