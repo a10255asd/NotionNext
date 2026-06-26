@@ -172,6 +172,14 @@ const BLOG = {
     process.env.NEXT_PUBLIC_GREETING_WORDS ||
     '你好，我是刘鸡血,我写后端工程实践,记录分布式系统与中间件,复盘真实问题排查',
 
+  // 欢迎语打字效果类型速度
+  GREETING_WORDS_TYPE_SPEED:
+    process.env.NEXT_PUBLIC_GREETING_WORDS_TYPE_SPEED || 200,
+
+  // 欢迎语打字效果回退速度
+  GREETING_WORDS_BACK_SPEED:
+    process.env.NEXT_PUBLIC_GREETING_WORDS_BACK_SPEED || 100,
+
   // uuid重定向至 slug
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
 }
