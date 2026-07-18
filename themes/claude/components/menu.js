@@ -1,4 +1,5 @@
 import { siteConfig } from '@/lib/config'
+import { withPersonalToolsMenu } from '@/lib/site/personalToolsMenu'
 import CONFIG from '../config'
 
 const normalizeSubMenus = subMenus =>
@@ -72,5 +73,5 @@ export function getClaudeMenuLinks({ locale, customNav, customMenu }) {
     links = customMenu
   }
 
-  return normalizeMenu(links)
+  return normalizeMenu(withPersonalToolsMenu(links))
 }

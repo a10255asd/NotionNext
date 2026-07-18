@@ -1,5 +1,6 @@
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
+import { withPersonalToolsMenu } from '@/lib/site/personalToolsMenu'
 import CONFIG from '../config'
 import { MenuItemCollapse } from './MenuItemCollapse'
 /**
@@ -52,6 +53,8 @@ export const MenuListSide = props => {
   if (siteConfig('CUSTOM_MENU')) {
     links = customMenu
   }
+
+  links = withPersonalToolsMenu(links)
 
   if (!links || links.length === 0) {
     return null
