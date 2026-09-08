@@ -26,7 +26,6 @@ import Hero from './components/Hero'
 import PostHero from './components/PostHero'
 import RightFloatArea from './components/RightFloatArea'
 import SearchNav from './components/SearchNav'
-import SideRight from './components/SideRight'
 import SlotBar from './components/SlotBar'
 import TagItemMini from './components/TagItemMini'
 import TocDrawer from './components/TocDrawer'
@@ -154,7 +153,7 @@ const LayoutBase = props => {
             </div>
 
             {/* 右侧栏 */}
-            <SideRight {...props} />
+
           </div>
         </main>
 
@@ -182,7 +181,7 @@ const LayoutBase = props => {
  * @returns
  */
 const LayoutIndex = props => {
-  return <LayoutPostList {...props} className='pt-8' />
+  return <><header className='blog-refresh-intro'><p>刘鸡血 · 博客</p><h1>一些思考，一路记录。</h1><p>记录技术学习、项目实践，以及日常生活中的发现。</p></header><LayoutPostList {...props} className='pt-8' /></>
 }
 
 /**
